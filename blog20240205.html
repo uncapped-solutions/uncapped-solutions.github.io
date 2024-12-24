@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Uncapped solutions</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- owl carousel style -->
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.0.0-beta.2.4/assets/owl.carousel.min.css" />
+      <!-- bootstrap css -->
+      <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      </head>
+   <body>
+      <!--header section start -->
+      <div class="header_section header_bg">
+         <div class="container">
+            <nav class="navbar navbar-dark bg-dark">
+               <a class="logo" href="index.html"><img src="images/logo_name_right_new_1.png"></a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample01" aria-controls="navbarsExample01" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               <div class="collapse navbar-collapse" id="navbarsExample01">
+                  <ul class="navbar-nav mr-auto">
+                     <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="client.html">Client</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+            </nav>
+         </div>
+      </div>
+     <!--header section end -->
+     
+    <!--banner section end -->
+    <!--blog section start -->
+      <div id="blog" class="blog_section layout_padding">
+         <div class="container">
+            <h1 class="blog_taital"><span class="our_text">Our</span> Blog</h1>
+            <p class="blog_title">Data Lakehouse Comparison </p>
+            <p class="blog_subtitle">Post date: 2024-02-05 </p>
+            
+            <div class="blog_text_content layout_padding">
+                <div class="col-md-4">
+                    <img src="images/lakehouse.jpg" class="image_bg">
+                </div>
+      
+                The data lakehouse architecture has emerged as a pivotal solution for organizations seeking to harness the power of both data lakes and data warehouses. At the heart of this innovative approach are three open-source projects: Apache Hudi, Delta Lake, and Apache Iceberg. Each of these projects plays a unique role in enabling efficient data management, processing, and analytics within the data lakehouse framework. However, the choice among them can be challenging due to the distinct features and capabilities they offer. This article aims to provide a comprehensive comparison of these three projects, focusing on their suitability for modern data lake platforms that require robust support for update-heavy workloads and continuous table management.
+Understanding the Core Projects
+                <div class = 'subtitle_bg'> Hudi</div>
+Apache Hudi is an open-source data management framework designed to provide reliable and fast data ingestion, updates, and deletion capabilities over large datasets. It introduces the concept of "upserts" (updates and inserts) and "deletes" in a way that is both efficient and scalable, making it ideal for applications that require real-time data processing and analytics.
+
+<div class = 'subtitle_bg'> Delta Lake</div>
+Delta Lake is an open-source storage layer that brings ACID transactions to Apache Spark and big data workloads. It ensures data reliability and integrity by providing features like schema enforcement and evolution, transactional writes, and time travel (point-in-time recovery). Delta Lake is particularly well-suited for applications that demand high reliability and consistency across distributed systems.
+<div class = 'subtitle_bg'> Apache Iceberg</div>
+Apache Iceberg is a table format for large, distributed datasets designed for efficiency and performance. It provides a rich set of features including partitioning, bucketing, and indexing, which enable efficient querying and analysis of large datasets. Iceberg is optimized for use with Apache Spark and other big data processing frameworks, making it a powerful tool for data warehousing and analytics.
+<div class = 'subtitle_bg'> Beyond Traditional Comparisons</div>
+
+While many existing comparisons focus on these projects as table/file formats for traditional append-only workloads, it's crucial to consider their broader implications for modern data lake platforms. These platforms often require not only the ability to ingest and store vast amounts of data but also to manage and analyze that data efficiently, especially in environments where data is frequently updated or deleted.
+<div class = 'subtitle_bg'> The Rise of OneTable</div>
+In the evolving landscape of data lakehouse technologies, a new project has emerged that seeks to address the challenges of choosing between different formats: OneTable. Co-launched by Microsoft, Google, and Onehouse, OneTable offers seamless interoperability between Apache Hudi, Delta Lake, and Apache Iceberg. This means users no longer have to commit to a single format or face the complexities of integrating multiple formats into their data architectures.
+OneTable represents a significant development in the open-source data ecosystem, promising to unlock new possibilities for data management and analysis. Its launch was covered by VentureBeat, highlighting its potential to transform how organizations approach data lakehouse implementations.
+As OneTable transitions to the Apache Software Foundation and finalizes its name change, it stands as a testament to the collaborative spirit of the open-source community and the ongoing innovation in data management technologies.
+<div class = 'subtitle_bg'> Conclusion</div>
+
+Choosing the right technology for your data lakehouse implementation depends on your specific requirements, including the nature of your data workloads, the scale of your data, and your organization's technical capabilities. By understanding the strengths and limitations of Apache Hudi, Delta Lake, and Apache Iceberg, and considering the emerging solutions like OneTable, you can make an informed decision that aligns with your data strategy and objectives.
+The data lakehouse ecosystem is rapidly evolving, and staying abreast of the latest developments and technologies is essential for leveraging the full potential of your data assets. As we continue to explore and innovate in this space, the future of data management and analysis looks brighter and more flexible than ever.      
+            </div>
+         </div>
+      </div>
+      <!--blog section end -->
+      <!--footer section start -->
+      <div class="footer_section layout_padding">
+         <div class="container">
+            <div class="address_main">
+               <div class="address_text"><a href="#"><img src="images/map-icon.png"><span class="padding_left_15">Location:</span></a></div>
+               <div class="address_text"><a href="#"><img src="images/linkedin-icon.png"><span class="padding_left_15">Linkedin:</span></a></div>
+               <div class="address_text"><a href="#"><img src="images/mail-icon.png"><span class="padding_left_15">admin@uncapped.solutions</span></a></div>
+            </div>
+            
+         </div>
+      </div>
+      <!--client section end -->
+      <!--copyright section start -->
+      <div class="copyright_section">
+         <div class="container">
+            <p class="copyright_text">Copyright 2024 All Right Reserved. Distributed by: ThemeWagon</p>
+         </div>
+      </div>
+      <!--copyright section end -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <!-- javascript --> 
+      <script src="js/owl.carousel.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script> 
+      <script type="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2//2.0.0-beta.2.4/owl.carousel.min.js"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+      <script src="../../assets/js/vendor/popper.min.js"></script>
+      <script src="../../dist/js/bootstrap.min.js"></script>
+   </body>
+</html>
